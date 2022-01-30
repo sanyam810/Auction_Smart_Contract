@@ -33,7 +33,7 @@ contract Auction{
     constructor(address eoa){
         owner=payable(eoa);
         startblock=block.number;
-        endblock=startblock+3;
+        endblock=startblock+40320;
         ipfshash="";
         bidincrement=1000000000000000000;
         auctionstate=state.running;
